@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolio website of Dhruv Batra, a BTech student and web developer.">
+    <meta name="keywords" content="Dhruv Batra, Portfolio, Web Developer, HTML, CSS, JavaScript">
+    <meta name="author" content="Dhruv Batra">
+    <title>Dhruv Batra - Web Developer Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="p.css">
+  </head>
+  <body>
+    <!-- Header Section -->
+    <header>
+      <nav>
+        <div class="logo">Dhruv Batra</div>
+        <ul>
+          <li><a href="#hero">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="hero">
+      <div class="hero-content">
+        <h1>Hi, I'm Dhruv Batra</h1>
+        <h2 class="typed-text"></h2>
+        <p>Aspiring Web Developer and Tech Enthusiast.</p>
+        <a href="Dhruv_Batra_Resume.pdf" class="btn" download>Download Resume</a>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+      <h2>About Me</h2>
+      <div class="about-content">
+        <img src="your-photo.jpg" alt="Dhruv Batra">
+        <div>
+          <p>I'm a third-year BTech student in Electronics and Telecommunication at DAVV University. My passion for web development, coupled with my interest in electronics, drives me to explore innovative solutions. I actively participate in college clubs and events, and I'm always learning new skills in both web development and technology.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills">
+      <h2>Skills</h2>
+      <div class="skills-grid">
+        <div class="skill"><img src="html-icon.png" alt="HTML">HTML</div>
+        <div class="skill"><img src="css-icon.png" alt="CSS">CSS</div>
+        <div class="skill"><img src="js-icon.png" alt="JavaScript">JavaScript</div>
+        <div class="skill"><img src="c-icon.png" alt="C">C</div>
+        <div class="skill"><img src="cpp-icon.png" alt="C++">C++</div>
+        <div class="skill"><img src="python-icon.png" alt="Python">Python</div>
+        <div class="skill"><img src="matlab-icon.png" alt="MATLAB">MATLAB</div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+      <h2>Projects</h2>
+      <div class="projects-grid">
+        <div class="project-card">
+          <h3>Weather App</h3>
+          <p>A weather app created using HTML, CSS, JavaScript, and an API to display weather data for any location.</p>
+          <a href="weather-app-live-link">See Live</a>
+          <a href="weather-app-github-link">Source Code</a>
+        </div>
+        <!-- You can add more projects here -->
+      </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience">
+      <h2>Experience</h2>
+      <div class="experience-timeline">
+        <div class="experience-item">
+          <h3>Web Developer Intern - Codsoft</h3>
+          <span>June 2024 - July 2024</span>
+          <p>Implemented HTML and CSS to create a personalized portfolio and designed a landing page to showcase products/services.</p>
+        </div>
+        <div class="experience-item">
+          <h3>Web Developer Intern - Cognifyz</h3>
+          <span>May 2024 - June 2024</span>
+          <p>Acquired foundational knowledge in web development and gained practical experience in HTML and CSS.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+      <h2>Contact Me</h2>
+      <form action="submit-form.php" method="post">
+        <input type="text" name="name" placeholder="Your Name" required>
+        <input type="email" name="email" placeholder="Your Email" required>
+        <textarea name="message" placeholder="Your Message" required></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+      <ul class="social-links">
+        <li><a href="tel:+917772950456">Phone: +91 7772950456</a></li>
+        <li><a href="mailto:dhruvbatra28@gmail.com">Email: dhruvbatra28@gmail.com</a></li>
+        <li><a href="https://www.linkedin.com/in/dhruv-batra-295325256/?originalSubdomain=in" target="_blank">LinkedIn</a></li>
+        <li><a href="https://www.instagram.com/__dhruv_batra__/" target="_blank">Instagram</a></li>
+      </ul>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <p>Made by Dhruv Batra with ❤️</p>
+    </footer>
+
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function() {
+        var typed = new Typed('.typed-text', {
+          strings: ['Web Developer', 'Tech Enthusiast', 'Innovator'],
+          typeSpeed: 100,
+          loop: true
+        });
+      });
+    </script>
+  </body>
+</html>

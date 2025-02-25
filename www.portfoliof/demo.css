@@ -1,0 +1,205 @@
+/* Universal Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+ }
+ 
+ html {
+    scroll-behavior: smooth;
+ }
+ 
+ body {
+    background-color: #0B0D17; /* Sleek dark background */
+    color: #EDEDED; /* Light text for contrast */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding-top: 80px;
+    line-height: 1.6;
+ }
+ 
+ /* Navigation Bar */
+ nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #1F2235;
+    padding: 15px 20px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    transition: background-color 0.3s ease-in-out;
+ }
+ 
+ nav:hover {
+    background-color: #25294A;
+ }
+ 
+ nav ul {
+    display: flex;
+    list-style: none;
+ }
+ 
+ nav li {
+    margin: 0 10px;
+ }
+ 
+ nav a {
+    color: #F0F0F0;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 1rem;
+    transition: color 0.3s ease, transform 0.3s ease;
+ }
+ 
+ nav a:hover {
+    color: #FFDD57;
+    transform: scale(1.1);
+ }
+ 
+ /* First Section */
+ .firstsection {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 50px 10%;
+    gap: 30px;
+ }
+ 
+ .leftsection {
+    font-size: 2.8rem;
+    color: #FFDD57;
+    text-align: center;
+    animation: fadeIn 1.5s ease-in-out;
+ }
+ 
+ .dd {
+    color: #CFCFCF;
+    font-size: 1rem;
+ }
+ 
+ .rightsection img {
+    width: 100%;
+    max-width: 350px;
+    border: 4px solid #FFDD57;
+    border-radius: 15px;
+    display: block;
+    margin: auto;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+ }
+ 
+ .rightsection img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 10px rgba(255, 221, 87, 0.6);
+ }
+ 
+ /* Education Section */
+ .education {
+    text-align: center;
+    padding: 50px 10%;
+ }
+ 
+ .education h1 {
+    color: #FFDD57;
+    margin-bottom: 20px;
+    font-size: 2.5rem;
+ }
+ 
+ .education p {
+    color: #CFCFCF;
+    font-size: 1.1rem;
+ }
+ 
+ /* Footer */
+ footer {
+    background-color: #1F2235;
+    color: #EDEDED;
+    padding: 15px 10px;
+    text-align: center;
+ }
+ 
+ /* Links in Footer */
+ footer a {
+    color: #FFDD57;
+    text-decoration: none;
+    transition: color 0.3s ease;
+ }
+ 
+ footer a:hover {
+    color: #FFA500;
+ }
+ 
+
+
+
+
+ /* Responsive Adjustments */
+ @media (max-width: 768px) {
+    nav {
+       flex-direction: column;
+       text-align: center;
+       padding: 10px;
+    }
+ 
+    nav ul {
+       flex-direction: column;
+       padding-top: 10px;
+    }
+ 
+    nav li {
+       margin: 8px 0;
+    }
+ 
+    .firstsection {
+       flex-direction: column;
+       padding: 20px;
+    }
+ 
+    .leftsection {
+       font-size: 2.2rem;
+    }
+ 
+    .rightsection img {
+       max-width: 80%;
+    }
+
+
+   
+
+
+ }
+ 
+ 
+ @media (max-width: 480px) {
+    body {
+       padding-top: 60px;
+    }
+ 
+    nav a {
+       font-size: 0.9rem;
+    }
+ 
+    .leftsection {
+       font-size: 1.8rem;
+    }
+ 
+    .education h1 {
+       font-size: 2rem;
+    }
+    
+   
+ }
+ 
+ /* Keyframe Animations */
+ @keyframes fadeIn {
+    from {
+       opacity: 0;
+       transform: translateY(20px);
+    }
+    to {
+       opacity: 1;
+       transform: translateY(0);
+    }
+ }
+ 

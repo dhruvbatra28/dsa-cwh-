@@ -1,0 +1,107 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Times New Roman', serif;
+  background-color: #F2E9DD;
+  color: #1A1A1A;
+  line-height: 1.5;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Header */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+header .logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+header nav a {
+  text-decoration: none;
+  color: #1A1A1A;
+  margin-left: 20px;
+  font-weight: bold;
+}
+
+/* Grid Layout */
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: auto auto;
+  gap: 20px;
+}
+
+.left {
+  grid-column: 1 / 2;
+  padding: 20px;
+  font-size: 1.8rem;
+}
+
+.left em, .bottom-right em {
+  font-style: italic;
+}
+
+.middle img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.right .card h3 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+.right .card img {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.menu p {
+  margin-bottom: 10px;
+}
+
+.bottom-left {
+  grid-column: 1 / 2;
+  font-size: 0.9rem;
+  color: #555;
+}
+
+.bottom-right {
+  grid-column: 2 / 4;
+  text-align: center;
+}
+
+.bottom-right h2 {
+  margin-top: 10px;
+  font-size: 1.5rem;
+}
+
+/* Footer */
+footer {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 30px;
+}
+
+footer a {
+  text-decoration: none;
+  color: #1A1A1A;
+  font-weight: bold;
+}

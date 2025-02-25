@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Map Navigation System</title>
+    <link rel="stylesheet" href="mp.css">
+</head>
+<body>
+    <h1>Shortest Path Finder</h1>
+    <div class="container">
+        <label for="start">Start Node:</label>
+        <input type="number" id="start" placeholder="Enter start node">
+
+        <label for="target">Target Node:</label>
+        <input type="number" id="target" placeholder="Enter target node">
+
+        <button onclick="findShortestPath()">Find Path</button>
+        <div id="result"></div>
+    </div>
+    <script src="mp.js"></script>
+</body>
+</html>

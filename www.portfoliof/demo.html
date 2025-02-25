@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dhruv - Developer Portfolio</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://unpkg.com/scrollreveal"></script>
+  <style>
+    /* Smooth Scroll Behavior */
+    html {
+      scroll-behavior: smooth;
+    }
+
+    /* Custom Scrollbar */
+    ::-webkit-scrollbar {
+      width: 8px;
+    }
+
+    ::-webkit-scrollbar-thumb {
+      background-color: #08463e;
+      border-radius: 10px;
+    }
+
+    ::-webkit-scrollbar-track {
+      background: #1e293b;
+    }
+  </style>
+</head>
+
+<body class="bg-gray-800 text-gray-200 font-sans leading-relaxed">
+
+  <!-- Header -->
+  <header class="bg-teal-700 text-white fixed w-full top-0 z-50 shadow-md">
+    <nav class="container mx-auto flex justify-between items-center p-4">
+      <div class="text-2xl font-bold hover:scale-105 transition-transform duration-300">
+        Dhruv's Portfolio
+      </div>
+
+      <!-- Hamburger Menu for Mobile -->
+      <div class="lg:hidden">
+        <button id="hamburger-icon" class="text-white focus:outline-none">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="w-8 h-8">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+          </svg>
+        </button>
+      </div>
+
+      <!-- Navbar Links -->
+      <ul id="navbar-links" class="hidden lg:flex space-x-6">
+        <li><a href="#home" class="hover:text-gray-300">Home</a></li>
+        <li><a href="#about" class="hover:text-gray-300">About</a></li>
+        <li><a href="#skills" class="hover:text-gray-300">Skills</a></li>
+        <li><a href="#projects" class="hover:text-gray-300">Projects</a></li>
+        <li><a href="#experience" class="hover:text-gray-300">Experience</a></li>
+        <li><a href="#activities" class="hover:text-gray-300">Activities</a></li>
+        <li><a href="#contact" class="hover:text-gray-300">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Mobile Menu -->
+  <div id="mobile-menu" class="lg:hidden bg-teal-700 fixed top-0 left-0 w-full h-full z-40 hidden">
+    <ul class="flex flex-col items-center justify-center h-full text-white">
+      <li><a href="#home" class="py-4 px-8 hover:text-gray-300">Home</a></li>
+      <li><a href="#about" class="py-4 px-8 hover:text-gray-300">About</a></li>
+      <li><a href="#skills" class="py-4 px-8 hover:text-gray-300">Skills</a></li>
+      <li><a href="#projects" class="py-4 px-8 hover:text-gray-300">Projects</a></li>
+      <li><a href="#experience" class="py-4 px-8 hover:text-gray-300">Experience</a></li>
+      <li><a href="#activities" class="py-4 px-8 hover:text-gray-300">Activities</a></li>
+      <li><a href="#contact" class="py-4 px-8 hover:text-gray-300">Contact</a></li>
+    </ul>
+  </div>
+
+  <!-- Hero Section -->
+  <section id="home" class="pt-32 pb-16 bg-gray-900 text-center">
+    <div class="flex flex-col md:flex-row justify-center items-center">
+      <h1  class="text-5xl font-bold text-teal-400 animate-bounce md:mr-8">
+        Hi, I'm <span id="element" class="text-teal-300"></span>
+      </h1>
+      <div class="mt-4 md:mt-0">
+        <img src="img3.jpeg" alt="Profile Picture" class="rounded-lg w-64 h-64 md:w-80 md:h-80 object-cover mx-auto md:ml-8">
+      </div>
+    </div>
+    <p class="text-lg mt-4">
+      Passionate web developer focused on building interactive and modern applications.
+    </p>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="py-16 bg-gray-800">
+    <div class="container mx-auto px-4 text-center">
+      <h2 class="text-4xl font-bold text-teal-400 mb-6">About Me</h2>
+      <div class="flex justify-center items-center gap-8">
+        <div>
+          <img src="img4.jpg" alt="Profile Picture" class="rounded-full w-50 h-50 object-cover">
+        </div>
+        <div class="text-lg">
+          <p>
+            My name is <span class="font-semibold text-teal-300">Dhruv Batra</span>, 
+            I am a motivated third-year Electronics & Telecommunication Engineering student with hands-on experience in web development (HTML, CSS, JavaScript) and programming languages like C, C++, Java, Python, and MATLAB. I have completed internships at Codsoft and Cognifyz, where I gained valuable skills in data analysis and problem-solving. Additionally, I developed a weather application that uses APIs to provide real-time location-based weather updates. As an active member of college clubs and someone who manages an automobile business, I excel in both technical and leadership roles, consistently seeking opportunities to learn and contribute.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills" class="py-16 bg-gray-700">
+    <div class="container mx-auto px-4">
+      <h2 class="text-4xl font-bold text-center text-teal-400 mb-6"> My Skills</h2>
+      <div class="space-y-6">
+        <div>
+          <p class="text-lg font-semibold">DSA</p>
+          <div class="w-full bg-gray-600 rounded-md">
+            <div class="bg-teal-400 text-center text-sm text-black p-1 rounded-md" style="width: 60%"></div>
+          </div>
+        </div>
+        <div>
+          <p class="text-lg font-semibold">C++ </p>
+          <div class="w-full bg-gray-600 rounded-md">
+            <div class="bg-teal-400 text-center text-sm text-black p-1 rounded-md" style="width: 50%"></div>
+          </div>
+          <p class="text-lg font-semibold">C</p>
+          <div class="w-full bg-gray-600 rounded-md">
+            <div class="bg-teal-400 text-center text-sm text-black p-1 rounded-md" style="width: 50%"></div>
+          </div>
+
+          <p class="text-lg font-semibold">Python</p>
+          <div class="w-full bg-gray-600 rounded-md">
+            <div class="bg-teal-400 text-center text-sm text-black p-1 rounded-md" style="width: 50%"></div>
+          </div>
+
+
+          
+
+
+
+
+        </div>
+        <div>
+          <p class="text-lg font-semibold">Java</p>
+          <div class="w-full bg-gray-600 rounded-md">
+            <div class="bg-teal-400 text-center text-sm text-black p-1 rounded-md" style="width: 50%"></div>
+          </div>
+        </div>
+        <div>
+          <p class="text-lg font-semibold">HTML</p>
+          <div class="w-full bg-gray-600 rounded-md">
+            <div class="bg-teal-400 text-center text-sm text-black p-1 rounded-md" style="width: 50%"></div>
+          </div>
+        </div>
+        <div>
+          <p class="text-lg font-semibold">CSS</p>
+          <div class="w-full bg-gray-600 rounded-md">
+            <div class="bg-teal-400 text-center text-sm text-black p-1 rounded-md" style="width: 80%"></div>
+          </div>
+
+
+
+          <p class="text-lg font-semibold">JavaScript</p>
+          <div class="w-full bg-gray-600 rounded-md">
+            <div class="bg-teal-400 text-center text-sm text-black p-1 rounded-md" style="width: 80%"></div>
+          </div>
+
+          <p class="text-lg font-semibold">Problem Solving</p>
+          <div class="w-full bg-gray-600 rounded-md">
+            <div class="bg-teal-400 text-center text-sm text-black p-1 rounded-md" style="width: 80%"></div>
+          </div>
+
+
+
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="py-16 bg-gray-900">
+    <div class="container mx-auto px-4">
+      <h2 class="text-4xl font-bold text-center text-teal-400 mb-6">Projects</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <div class="bg-gray-800 rounded-lg p-6 hover:scale-105 transition-all duration-300">
+          <h3 class="text-2xl font-semibold text-teal-300">Weather App</h3>
+          <p>Displays real-time weather using an API and JavaScript.</p>
+          <img src="imgw.png" alt="Weather App Screenshot" class="rounded-lg mt-4">
+        </div>
+
+
+        <div class="bg-gray-800 rounded-lg p-6 hover:scale-105 transition-all duration-300">
+          <h3 class="text-2xl font-semibold text-teal-300">Sales and Stock Managment App</h3>
+          <p>Helps people with small business to manage their stock and produce non gst bills.</p>
+          <img src="ss.png" alt="Weather App Screenshot" class="rounded-lg mt-4">
+        </div>
+
+
+
+        <div class="bg-gray-800 rounded-lg p-6 hover:scale-105 transition-all duration-300">
+          <h3 class="text-2xl font-semibold text-teal-300">Calculator</h3>
+          <p>A functional calculator built using HTML, CSS, and JavaScript.</p>
+          <img src="calc.jpeg" alt="Calculator Screenshot" class="rounded-lg mt-4">
+        </div>
+        <div class="bg-gray-800 rounded-lg p-6 hover:scale-105 transition-all duration-300">
+          <h3 class="text-2xl font-semibold text-teal-300">Rock Paper Scissors</h3>
+          <p>Interactive game implemented with JavaScript for dynamic UI.</p>
+          <img src="rps.jpeg" alt="Rock Paper Scissors Screenshot" class="rounded-lg mt-4">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Experience Section -->
+  <section id="experience" class="py-16 bg-gray-700">
+    <div class="container mx-auto px-4">
+      <h2 class="text-4xl font-bold text-center text-teal-400 mb-6">Experience</h2>
+      <div>
+        <h3 class="text-2xl text-teal-300">Codsoft (Web Developer Intern)</h3>
+        <p>Implemented portfolio design. <a href="https://drive.google.com/file/d/1cbAn8q_LeCCnR_af2Tp39oA7jb0RChlC/view?usp=drive_link" class="text-teal-400 underline">View Certificate</a></p>
+      </div>
+      <div class="mt-4">
+        <h3 class="text-2xl text-teal-300">Cognifyz (Web Developer Intern)</h3>
+        <p>Developed basic responsive projects. <a href="https://drive.google.com/file/d/1cXzTjUBjG48kn5IlLUGUtk9kwfyStEca/view?usp=drive_link" class="text-teal-400 underline">View Certificate</a></p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Activities Section -->
+  <section id="activities" class="py-16 bg-gray-800">
+    <div class="container mx-auto px-4 ">
+      <h2 class="text-4xl font-bold text-teal-400 mb-6">Extra-Curricular</h2>
+      <ul class="text-lg">
+        <li>• Core Team Member at FEEDBOX College club (2023)</li>
+        <li>• Secured sponsorships for RASS fest (2023 and 2024)</li>
+        <li>• Co-ordinator at TEDxDAVV under Flic (2023)</li>
+        <li>• Groundwork in event INVENTO (2023)</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="py-16 bg-gray-900 text-center">
+    <h2 class="text-4xl font-bold text-teal-400 mb-6">Contact Me</h2>
+    <p>📧 <a href="mailto:dhruvbatra28@gmail.com" class="underline text-teal-400">dhruvbatra28@gmail.com</a></p>
+    <p>📱 +91 7772950456</p>
+  </section>
+
+  <!-- Typed.js -->
+  <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+  <script>
+    new Typed("#element", {
+      strings: ["Batra", "Dhruv Batra"],
+      typeSpeed: 100,
+      loop: true,
+    });
+  </script>
+
+  <!-- ScrollReveal -->
+  <script>
+    ScrollReveal().reveal("section", { delay: 200, origin: "bottom", distance: "50px", duration: 1000 });
+  </script>
+
+  <!-- Hamburger Menu Toggle Script -->
+  <script>
+    const hamburgerIcon = document.getElementById('hamburger-icon');
+    const mobileMenu = document.getElementById('mobile-menu');
+    const navbarLinks = document.getElementById('navbar-links');
+
+    hamburgerIcon.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+    });
+
+    window.addEventListener('resize', () => {
+      if (window.innerWidth >= 1024) {
+        mobileMenu.classList.add('hidden');
+      }
+    });
+  </script>
+</body>
+
+</html>

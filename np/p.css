@@ -1,0 +1,137 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+  }
+  
+  header {
+    position: fixed;
+    width: 100%;
+    background: #333;
+    padding: 10px 0;
+    z-index: 1000;
+  }
+  
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  
+  nav .logo {
+    font-size: 24px;
+    color: #fff;
+  }
+  
+  nav ul {
+    list-style: none;
+    display: flex;
+  }
+  
+  nav ul li {
+    margin-left: 20px;
+  }
+  
+  nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+  }
+  
+  nav ul li a:hover {
+    color: #00e5ff;
+  }
+  
+  section {
+    padding: 100px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  #hero {
+    background: url('hero-background.jpg') no-repeat center center/cover;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .hero-content {
+    text-align: center;
+    color: #fff;
+  }
+  
+  .hero-content h1 {
+    font-size: 48px;
+  }
+  
+  .hero-content p {
+    font-size: 24px;
+  }
+  
+  .hero-content .btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background: #00e5ff;
+    color: #fff;
+    text-decoration: none;
+    margin-top: 20px;
+    border-radius: 5px;
+  }
+  
+  .hero-content .btn:hover {
+    background: #00b5cc;
+  }
+  
+  #about {
+    background-color: #fff;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 80px 20px;
+  }
+  
+  .about-content img {
+    border-radius: 50%;
+    width: 200px;
+  }
+  
+  .about-content p {
+    max-width: 600px;
+    line-height: 1.8;
+  }
+  
+  #skills .skills-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  
+  .skill {
+    flex: 1 1 30%;
+    text-align: center;
+  }
+  
+  .skill img {
+    width: 60px;
+  }
+  
+  #projects .projects-grid {
+    display: flex;
+    gap: 20px;
+  }
+  
+  .project-card {
+    background: #fff
+  }

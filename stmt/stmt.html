@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Billing & Stock Maintenance</title>
+  <link rel="stylesheet" href="stmt.css">
+</head>
+<body>
+  <header>
+    <h1>Billing & Stock Maintenance</h1>
+  </header>
+
+  <main>
+    <!-- Stock Management Section -->
+    <section class="stock-management">
+      <h2>Stock Management Section </h2>
+      <form id="add-stock-form">
+        <input type="text" id="item-name" placeholder="Item Name" required>
+        <input type="number" id="item-quantity" placeholder="Quantity" required>
+        <button type="submit">Add Stock</button>
+      </form>
+
+      <div class="stock-list">
+        <table id="stock-table">
+          <thead>
+            <tr>
+              <th>Item Name</th>
+              <th>Quantity</th>
+            </tr>
+          </thead>
+          <tbody>
+            <!-- Stock items will be dynamically populated here -->
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- Billing Section --> 
+    <section class="billing">
+      <h2>Billing Section </h2>
+      <form id="billing-form">
+        <input type="text" id="party-name" placeholder="Party Name" required>
+        <input type="text" id="party-name" placeholder="Price " required>
+        <input type="text" id="billing-item-name" placeholder="Item Name" required>
+        <input type="number" id="billing-quantity" placeholder="Quantity" required>
+        <button type="submit">Add to Bill</button>
+      </form>
+
+      <div id="billing-details">
+        <h3>Bill Details</h3>
+        <table id="billing-table">
+          <thead>
+            <tr>
+              <th>Party Name</th>
+              <th>Item Name</th>
+              <th>Quantity</th>
+              <th>Action</th>
+            </tr>
+          </thead>
+          <tbody>
+            <!-- Billing items will be dynamically populated here -->
+          </tbody>
+        </table>
+        <button id="print-bill">Print Bill</button>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Billing & Stock App</p>
+  </footer>
+
+  <script src="stmt.js"></script>
+</body>
+</html>

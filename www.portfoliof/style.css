@@ -1,0 +1,195 @@
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box; /* For better sizing calculations */
+}
+
+html {
+   scroll-behavior: smooth;
+   scrollbar-width: thin;
+}
+
+body {
+   background-color: rgb(7, 18, 83);
+   color: black;
+   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+   padding-top: 100px;
+}
+
+/* Navigation Bar */
+nav {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   height: 80px;
+   padding: 0 20px;
+   background-color: aquamarine;
+   position: fixed;
+   top: 0;
+   width: 100%;
+   z-index: 1000;
+   transition: background-color 0.3s ease-in-out;
+}
+
+nav:hover {
+   background-color: rgb(127, 255, 212); /* Slightly brighter hover */
+}
+
+nav ul {
+   display: flex;
+   justify-content: center;
+}
+
+nav li {
+   list-style: none;
+   margin: 0 20px;
+}
+
+nav a {
+   color: black;
+   text-decoration: none;
+   font-size: 1rem;
+   transition: all 0.3s ease;
+}
+
+nav a:hover {
+   color: blue;
+   font-size: 1.04rem;
+}
+
+/* Main Sections */
+.firstsection {
+   display: flex;
+   justify-content: space-around;
+   flex-wrap: wrap; /* Makes it responsive */
+   margin: 80px 0;
+   padding: 0 20px;
+}
+
+.firstsection div {
+   width: 100%;
+   max-width: 30%;
+   text-align: center;
+   margin-bottom: 20px;
+}
+
+.leftsection, .leftsection1 {
+   font-size: 2.5rem;
+   margin: 20px 0;
+   color: rgb(196, 199, 10);
+   text-align: center;
+   animation: fadeIn 1.5s ease-in-out;
+}
+
+.dd, .dhruv {
+   color: rgb(216, 216, 209);
+}
+
+.rightsection {
+   border: 5px solid black;
+   border-radius: 10px;
+   padding: 10px;
+   margin: 0 auto;
+   animation: slideIn 1s ease-in-out;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+   nav {
+      flex-direction: column;
+      height: auto;
+      padding: 10px;
+   }
+
+   nav ul {
+      flex-direction: column;
+      margin-top: 10px;
+   }
+
+   nav li {
+      margin: 10px 0;
+   }
+
+   .firstsection {
+      flex-direction: column;
+      align-items: center;
+   }
+
+   .firstsection div {
+      max-width: 100%;
+   }
+
+   .leftsection, .leftsection1 {
+      font-size: 2rem;
+   }
+}
+
+/* Small screens */
+@media (max-width: 480px) {
+   body {
+      padding-top: 60px;
+   }
+
+   .leftsection, .leftsection1 {
+      font-size: 1.8rem;
+   }
+
+   nav a {
+      font-size: 0.9rem;
+   }
+}
+
+/* Animations */
+@keyframes fadeIn {
+   from {
+      opacity: 0;
+      transform: translateY(20px);
+   }
+   to {
+      opacity: 1;
+      transform: translateY(0);
+   }
+}
+
+@keyframes slideIn {
+   from {
+      transform: translateX(-100%);
+   }
+   to {
+      transform: translateX(0);
+   }
+}
+
+.education {
+   padding: 50px 20px;
+   text-align: center;
+}
+
+h1 {
+   color: snow;
+   margin-bottom: 20px;
+}
+
+main a {
+   color: snow;
+   font-size: larger;
+   text-decoration: none;
+   transition: all 0.3s ease;
+}
+
+main a:hover {
+   color: blue;
+   font-size: 1.04rem;
+}
+
+footer {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   padding: 10px;
+   background-color: aquamarine;
+}
+
+.res {
+   padding: 10px;
+}
